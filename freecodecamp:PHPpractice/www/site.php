@@ -11,13 +11,7 @@
 <body>
     
     <?php
-    $characterName = "tom";
-    $characterAge = 1;
-
-    echo ("There was $characterName <br>");
-    echo ("He was $characterAge yrs old <br>");
-    $characterName = "Mike";
-    echo ("He liked the name $characterName <br>");
+   
     echo ("However, he didn't like being $characterAge <br>");
 
     ?>
