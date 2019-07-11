@@ -10,11 +10,20 @@
 </head>
 <body>
     
+    
+
+    <form action="site.php" method="get">
+       Name:  <br><input type="text" name="name">
+       <br>
+       <input type="submit">
+    </form>
+
+
     <?php
-   
-    echo ("However, he didn't like being $characterAge <br>");
+    echo $_GET["name"]
 
     ?>
+
 
 
 </body>
