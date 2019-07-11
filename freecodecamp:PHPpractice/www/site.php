@@ -12,19 +12,22 @@
     
     
 
-    <form action="site.php" method="get">
-       Name:  <br><input type="text" name="kuboodle">
-       <br>
-       <input type="submit">
-    </form>
+<form action="site.php" method="get">
+    Name:<input type="text" name="mytime">
+    Age: <input type="number" name="age">
+    <button type="submit">submit</button>
 
-yo name iz:
-    <?php
-    echo $_GET["kuboodle"]
+</form>
+your name is
+<?php
+echo $_GET["mytime"]
 
-    ?>
-
-
+?>
+<br>
+your age is
+<?php
+echo $_GET["age"]
+?>
 
 </body>
 </html>
