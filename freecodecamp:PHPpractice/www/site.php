@@ -13,14 +13,14 @@
     
 
     <form action="site.php" method="get">
-       Name:  <br><input type="text" name="name">
+       Name:  <br><input type="text" name="kuboodle">
        <br>
        <input type="submit">
     </form>
 
-
+yo name iz:
     <?php
-    echo $_GET["name"]
+    echo $_GET["kuboodle"]
 
     ?>
 
