@@ -12,16 +12,14 @@
     
 
 
-<form action="site.php" method="post">
-    <input type="text" name="student">
-    <input type="submit">
-</form>
 
 
 <?php
-    $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
+    function sayHi($name, $age){
+        echo "Hello $name, you are $age?";
+    }
 
-    echo $grades[$_POST["student"]];
+    sayHi("Mike", 55);
 
 ?>
 
