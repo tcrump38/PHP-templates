@@ -15,18 +15,17 @@
 
 
 <?php
-    $isMale = true;
-    $isTall = false;
-    if ($isMale && $isTall){
-        echo  "you are a male and tall";
-    } elseif ($isMale && !$isTall){
-        echo "you are a short male";
-    } elseif (!$isMale && $isTall) {
-        echo "are are not a tall male";
-    } else{
-        echo "you are not a tall male";
-    }
+    function getMax($num1, $num2, $num3){
+        if($num1 >= $num2 && $num1 >= $num3){
+            return $num1;
+        }elseif($num2 >= $num1 && $num2 >= $num3){
+            return $num2;
+        }else{
+            return $num3;
+        }
 
+    }
+    echo getMax(3, 90, 91);
 
 ?>
 
