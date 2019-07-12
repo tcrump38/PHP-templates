@@ -15,12 +15,12 @@
 
 
 <?php
-    function sayHi($name, $age){
-        echo "Hello $name, you are $age?";
+    function cube($num){
+        return $num *  $num * $num;
     }
 
-    sayHi("Mike", 55);
 
+    echo cube(4);
 ?>
 
 
