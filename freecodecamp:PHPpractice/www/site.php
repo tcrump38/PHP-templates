@@ -11,25 +11,27 @@
 <body>
     
 
-<form action="site.php" method="post">
+<!-- <form action="site.php" method="post">
     <input type="text" name="grade">
     <input type="submit">
-</form>
+</form> -->
 
 
 
 <?php
-$grade = $_POST["grade"];
-switch ($grade){
-    case "A":
-        echo "You did amazing";
-        break;
-    case "B":
-        echo "You did pretty good";
-        break;
-    default:
-        echo "Invalid grade";
-}
+//while loop
+    // $index = 1;
+    // while($index <= 5){
+    //     echo "$index <br>";
+    //     $index++;
+    // }
+
+//do while loop
+    $index = 6;
+    do{
+        echo "$index <br>";
+        $index++;
+    }while($index <= 5);
 
 
 ?>
