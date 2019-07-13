@@ -16,10 +16,28 @@
 
 
 <?php 
-$title = "My first post";
-$author = "Mike";
-$wordCount = 400;
-include "article-header.php" ?>
+
+class Book{
+    var $title;
+    var $author;
+    var $pages;
+
+}
+$book1 = new Book;
+$book1->title = "Harry Potter";
+$book1->author = "JK Rowling";
+$book1->pages = 400;
+
+$book2 = new Book;
+$book2->title = "Lord Of The Rings";
+$book2->author = "JRR Tolkein";
+$book2->pages = 700;
+
+// echo $book1->author;
+echo $book2->author;
+
+
+?>
 
 
 
