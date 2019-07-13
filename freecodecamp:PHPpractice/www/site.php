@@ -19,19 +19,12 @@
 
 
 <?php
-//while loop
-    // $index = 1;
-    // while($index <= 5){
-    //     echo "$index <br>";
-    //     $index++;
-    // }
 
-//do while loop
-    $index = 6;
-    do{
-        echo "$index <br>";
-        $index++;
-    }while($index <= 5);
+$luckyNumbers  = array(4, 8, 16, 23, 42);
+for($i = 0; $i < count($luckyNumbers); $i++){
+    echo "$luckyNumbers[$i] <br>";
+}
+
 
 
 ?>
