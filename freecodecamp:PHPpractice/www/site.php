@@ -15,9 +15,12 @@
 
 
 
-<?php include "header.html" ?>
-    <p>Hello Earth<p>
-<?php include "footer.html" ?>
+<?php 
+$title = "My first post";
+$author = "Mike";
+$wordCount = 400;
+include "article-header.php" ?>
+
 
 
 </body>
