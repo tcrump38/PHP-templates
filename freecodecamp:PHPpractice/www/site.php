@@ -17,32 +17,35 @@
 
 <?php 
 //Class
-class Book{
-    var $title;
-    var $author;
-    var $pages;
+class Student{
+    var $name;
+    var $major;
+    var $gpa;
     //constructor
-    function __construct($aTitle, $aAuthor, $aPages){
-        $this->title = $aTitle;
-        $this->author = $aAuthor;
-        $this->pages = $aPages;
+    function __construct($name, $major, $gpa){
+        $this->name = $name;
+        $this->major = $major;
+        $this->gpa = $gpa;
+    }
+
+    function hasHonors(){
+        if($this->gpa >= 3.5){
+            return "true";
+        }
+        return "false";
+        
     }
 
 }
 
-//book 1 Object
-$book1 = new Book("Harry Potter", "JK Rowling", 400);
-// $book1->title = "Harry Potter";
-// $book1->author = "JK Rowling";
-// $book1->pages = 400;
+// Object
+$student1 = new Student("Jim", "Business", 2.8);
 
-//book 2 Object
-$book2 = new Book("Lord of The Rings", "JRR Tolkein", 700);
-// $book2->title = "Lord Of The Rings";
-// $book2->author = "JRR Tolkein";
-// $book2->pages = 700;
+// Object
+$student2 = new Student("Pam", "Art", 3.6);
 
-echo $book2->pages;
+echo $student2->hasHonors();
+
 
 
 ?>
