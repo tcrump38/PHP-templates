@@ -16,38 +16,32 @@
 
 
 <?php 
-//Class
-class Student{
-    var $name;
-    var $major;
-    var $gpa;
-    //constructor
-    function __construct($name, $major, $gpa){
-        $this->name = $name;
-        $this->major = $major;
-        $this->gpa = $gpa;
+//Getters and Setters
+class Movie{
+    public $title;
+    private $rating;
+    
+    function __construct($title, $rating){
+        $this->title = $title;
+        $this->setRating($rating);
     }
-
-    function hasHonors(){
-        if($this->gpa >= 3.5){
-            return "true";
+    function getRating(){
+        return $this->rating;
+    }
+    function setRating($rating){
+        // $this->rating = $rating;
+        if($rating == "G" || $rating == "PG" || $rating == "R" || $rating == "NR"){
+            $this->rating = $rating;
+        }else{
+            $this->rating = "NR";
         }
-        return "false";
-        
     }
-
 }
 
-// Object
-$student1 = new Student("Jim", "Business", 2.8);
-
-// Object
-$student2 = new Student("Pam", "Art", 3.6);
-
-echo $student2->hasHonors();
-
-
-
+$avengers = new Movie("Avengers", "PG-13");
+//invald rating
+    $avengers->setRating("jhfjgf");
+echo $avengers->getRating();
 ?>
 
 
