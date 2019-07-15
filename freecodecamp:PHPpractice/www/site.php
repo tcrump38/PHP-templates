@@ -16,32 +16,34 @@
 
 
 <?php 
-//Getters and Setters
-class Movie{
-    public $title;
-    private $rating;
-    
-    function __construct($title, $rating){
-        $this->title = $title;
-        $this->setRating($rating);
+//Inheritance
+class Chef {
+    function makeChicken(){
+        echo "the chef makes chicken <br>";
     }
-    function getRating(){
-        return $this->rating;
+    function makeSalad(){
+        echo "the chef makes salad";
     }
-    function setRating($rating){
-        // $this->rating = $rating;
-        if($rating == "G" || $rating == "PG" || $rating == "R" || $rating == "NR"){
-            $this->rating = $rating;
-        }else{
-            $this->rating = "NR";
-        }
+    function makeSpecialDish(){
+        echo "the chef makes bbq ribs <br>";
     }
 }
 
-$avengers = new Movie("Avengers", "PG-13");
-//invald rating
-    $avengers->setRating("jhfjgf");
-echo $avengers->getRating();
+class italianChef extends Chef{
+    function makePasta(){
+        echo "the chef makes pasta";
+    }//overriding makespecialdish function.
+    function makeSpecialDish(){
+        echo "the chef makes chicken parm";
+    }
+}
+
+$chef = new Chef();
+$chef->makeSpecialDish();
+
+$italianChef = new italianChef();
+$italianChef->makeSpecialDish();
+
 ?>
 
 
